@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Littbox</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Littbox">
+    <meta name="description" content="Littbox, An alternate lightbox, inspired by the Apple webshop. Simply put, it starts and ends it's animation on the clicked image.">
+    <meta name="keywords" content="Littbox, lightbox, enlarge image, jquery, plugin">
+    <link rel="stylesheet" href="css/littbox.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../jquery-1.10.2.min.js"><\/script>')</script>
+<script src="js/littbox.js"></script>
+    <div class="container">
+        <h1>Littbox</h1>
+        <p class="intro">An alternate lightbox, inspired by the Apple webshop.<br/>Simply put, it starts and ends it's animation on the clicked image.<br/>This gives the impression that the image is being enlarged on the fly.</p>
+        <hr/>
+        <h2>Examples</h2>
+        <section>
+            <article>
+                <a rel="littbox" href="images/litt1.jpg">
+                    <img src="images/litt1-small.jpg" alt="img-1">
+                </a>
+                <h3 class="littbox-title">Clock</h3>
+                <p class="littbox-subtitle">Random image shot in Austria<br>
+                </p>
+            </article>
+            <article>
+                <a rel="littbox" href="images/litt2.jpg">
+                    <img src="images/litt2-small.jpg" alt="img-2">
+                </a>
+                <h3 class="littbox-title">Flower</h3>
+                <p class="littbox-subtitle">Random image shot in<br/>The Netherlands<br>
+                </p>
+            </article>
+            <article>
+                <a rel="littbox" href="images/litt3.jpg">
+                    <img src="images/litt3-small.jpg" alt="img-3">
+                </a>
+                <h3 class="littbox-title">Flower</h3>
+                <p class="littbox-subtitle">Random image shot in<br/>The Netherlands<br>
+                </p>
+            </article>
+            <article>
+                <a rel="littbox" href="images/litt4.jpg">
+                    <img src="images/litt4-small.jpg" alt="img-4">
+                </a>
+                <h3 class="littbox-title">Flower</h3>
+                <p class="littbox-subtitle">Random image shot in<br/>The Netherlands<br>
+                </p>
+            </article>
+        </section>
+        <hr/>
+        <section>
+            <h2>Download</h2>
+            <p>You can download the sourcecode, including this example @ <a href="https://github.com/listerical85/Littbox">Github</a></p>
+        </section>
+        <hr/>
+        <section>
+            <h2>Getting started</h2>
+            <ol>
+                <li>Download the latest version of Littbox.</li>
+                <li>Make sure you have jQuery loaded in your site. (If not, it is included on Github).
+                    <code>
+                        &lt;script src="js/jquery-1.10.2.min.js"&gt;&lt;/script&gt;
+                    </code>
+                </li>
+                <li>Find <span>littbox.js</span> in the js folder and include it in your site, after you have loaded jQuery
+                <code>
+                    &lt;script src="js/littbox.js"&gt;&lt;/script&gt;
+                </code></li>
+                <li>In the css folder you will find <span>littbox.css</span> include it in your site. Littbox uses one image for preloading, it assumes this image is located in a folder named images. The image is called <span>loader.gif</span>
+                <code>&lt;link rel="stylesheet" href="css/littbox.css"&gt;</code></li>
+                <li>Now you're ready to use Littbox, wrap your thumbnail image in a link, wrap them in a container (div/article/etc.) Add a title and subtitle, like the example below.</li>
+                <code>
+<pre>&lt;article&gt;
+    &lt;a rel="littbox" href="images/litt4.jpg"&gt;
+        &lt;img src="images/litt4-small.jpg" alt="img-4"&gt;
+    &lt;/a&gt;
+    &lt;h3 class="littbox-title"&gt;Flower&lt;/h3&gt;
+    &lt;p class="littbox-subtitle"&gt;Random image shot in&lt;br/&gt;The Netherlands&lt;br&gt;&lt;/p&gt;
+&lt;/article&gt;</pre>
+                </code>
+                <li>Make sure you add rel="littbox" to your link, and the littbox-title, littbox-subtitle classes to there proper elements.</li>
+                <li>Enjoy Littbox!</li>
+            </ol>
+
+        </section>
+        <hr/>
+        <section>
+            <h2>Help</h2>
+            <p>Littbox is still in development, so bugs might occure, if you find any bugs or have any requests or suggestions<br/>please create an <a href="https://github.com/listerical85/Littbox/issues">issue on Github</a><br/>
+            You can also contact me @ <a href="mailto:info@listerical.nl">info@listerical.nl</a>
+            </p>
+        </section>
+        <hr/>
+        <section>
+            <h2>Wishlist</h2>
+            <ul>
+                <li>Easier customising of Littbox</li>
+                <li>Browser support (Not yet tested)</li>
+                <li>Albums / Previous / Next</li>
+                <li>Any suggestions?! <a href="https://github.com/listerical85/Littbox/issues">Let me know on Github</a> </li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+@import url(http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic);
+body{
+    background-color: #001F3F;
+    color:#FFFFFF;
+    font-family: Muli, Arial;
+}
+    .container{
+        width: 940px;
+        margin:0 auto;
+        padding-bottom:40px;
+    }
+        section article{
+            float: left;
+            width: 220px;
+            margin-right: 20px;
+        }
+        section article:last-child{
+            margin-right: 0;
+        }
+    h1{
+        font-size: 56px;
+        margin:40px 0 10px 0;
+    }
+    h2{
+        font-size: 30px;
+    }
+    h2,h3{
+        margin: 10px 0;
+    }
+    h3{
+        font-size: 24px;
+    }
+    hr{
+        margin:20px 0;
+    }
+    a{
+        color:white;
+    }
+    li{
+       margin-bottom: 10px;
+    }
+    p{margin: 0 0 20px 0;line-height: 25px;}
+    .intro{
+        font-size: 24px;
+        line-height: 40px;
+        margin: 0 0 40px 0;
+    }
+    .littbox-detail{
+        color: #001F3F;
+    }
+    span{
+        font-style: italic;
+        font-weight: 300;
+    }
+    code{
+        clear: both;
+        display: block;
+        width: 100%;
+        margin:10px 0;
+        border: 1px solid #000000;
+        background-color: #333333;
+        padding:10px;
+    }
+

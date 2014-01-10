@@ -65,6 +65,7 @@
             this.$littLargeImage = $('<img src="'+littLargeImage.src+'"/>');
             //Breedte aanpassen aan thumbnail
             this.$littLargeImage.width(this.$littClickedImage.width());
+            this.$littLargeImage.css({'visibility':'hidden'});
             //Alvast tonen om hoogte te kunnen bepalen
             this.$littbox.html(this.$littLargeImage);
             this.$littLargeImage.width(this.options.LittTargetWidth+'px');
@@ -73,11 +74,10 @@
             //ToDo needs a better solution
             this.$clone = this.$littLargeImage.clone();
             $('body').append(this.$clone);
-            this.$clone.css({'display':'block','visibility':'visible'});
+            this.$clone.css({'display':'block','visibility':'hidden'});
 
             this.$clone.on('load',function(){
                 self.$littLargeImage.width(self.options.LittOriginalWidth+'px');
-
                 self.imageLoadedContinued();
 
             });
@@ -118,6 +118,7 @@
             $('body').prepend(this.$fsoverlay);
 
             // Afbeelding vergroten
+            this.$littLargeImage.css({'visibility':'visible'});
             this.$littLargeImage.animate({'width':self.options.LittTargetWidth+'px'});
 
             if(self.options.LittDetail)self.loadLittDetail(this.$littClickedImage);

@@ -14,6 +14,7 @@
             this.LittOriginalWidth = 0;
             this.LittOriginalHeight = 0;
             this.LittDetail = true;
+            this.LittBoxOpen = false;
         }
         return LittboxOptions;
     })();
@@ -128,7 +129,7 @@
             var product_titel = this.$littClickedImage.parent().parent().find('.littbox-title');
             var product_omschrijving = this.$littClickedImage.parent().parent().find('.littbox-subtitle');
             this.$littDetail = $('<div class="littbox-detail"><h2>'+product_titel.html()+'</h2><p>'+product_omschrijving.html()+'</p></div>');
-
+            this.options.LittBoxOpen = true;
             this.$fsoverlay.append(this.$littDetail);
         };
 
@@ -147,6 +148,7 @@
                             self.$fsoverlay.fadeOut(function(){
                                 self.$fsoverlay.remove();
                                 self.$littbox.remove();
+                                this.options.LittBoxOpen = false;
                             });
                         });
                     }
@@ -160,7 +162,7 @@
             var self = this;
 
             return $('body').on('click', 'a[rel^=littbox]', function(e) {
-                self.start($(e.currentTarget));
+                if(!self.options.LittBoxOpen)self.start($(e.currentTarget));
                 return false;
             });
 

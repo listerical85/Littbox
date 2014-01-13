@@ -148,7 +148,7 @@
                             self.$fsoverlay.fadeOut(function(){
                                 self.$fsoverlay.remove();
                                 self.$littbox.remove();
-                                this.options.LittBoxOpen = false;
+                                self.options.LittBoxOpen = false;
                             });
                         });
                     }
